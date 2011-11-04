@@ -47,6 +47,7 @@ available as a symbol in maths mode.
 #- source
 %doc %{_texmfdistdir}/source/latex/skull/skull.dtx
 %doc %{_texmfdistdir}/source/latex/skull/skull.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -57,3 +58,5 @@ available as a symbol in maths mode.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
