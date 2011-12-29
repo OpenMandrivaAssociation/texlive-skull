@@ -17,28 +17,18 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
 The font (defined in MetaFont) defines a single character, a
 black solid skull. A package is supplied to make this character
 available as a symbol in maths mode.
 
-%pre
-    %_texmf_mktexlsr_pre
-
 %post
-    %_texmf_mktexlsr_post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
-    fi
+    %{_sbindir}/texlive.post
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -48,7 +38,6 @@ available as a symbol in maths mode.
 #- source
 %doc %{_texmfdistdir}/source/latex/skull/skull.dtx
 %doc %{_texmfdistdir}/source/latex/skull/skull.ins
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -59,5 +48,3 @@ available as a symbol in maths mode.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex source %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
