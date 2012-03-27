@@ -1,12 +1,12 @@
-# revision 15878
+# revision 25608
 # category Package
 # catalog-ctan /fonts/skull
-# catalog-date 2007-02-28 00:02:05 +0100
+# catalog-date 2011-04-11 22:34:22 +0200
 # catalog-license gpl
 # catalog-version 0.1
 Name:		texlive-skull
 Version:	0.1
-Release:	2
+Release:	3
 Summary:	A font to draw a skull
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/skull
@@ -36,8 +36,8 @@ available as a symbol in maths mode.
 %{_texmfdistdir}/fonts/source/public/skull/skull.mf
 %{_texmfdistdir}/tex/latex/skull/skull.sty
 #- source
-%doc %{_texmfdistdir}/source/latex/skull/skull.dtx
-%doc %{_texmfdistdir}/source/latex/skull/skull.ins
+%doc %{_texmfdistdir}/source/fonts/skull/skull.dtx
+%doc %{_texmfdistdir}/source/fonts/skull/skull.ins
 
 #-----------------------------------------------------------------------
 %prep
