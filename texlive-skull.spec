@@ -48,3 +48,21 @@ available as a symbol in maths mode.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Mar 27 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1-3
++ Revision: 787766
+- Update to latest release.
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1-2
++ Revision: 756067
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.1-1
++ Revision: 719549
+- texlive-skull
+- texlive-skull
+- texlive-skull
+- texlive-skull
+
