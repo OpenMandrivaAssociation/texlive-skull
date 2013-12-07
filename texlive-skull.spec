@@ -6,7 +6,7 @@
 # catalog-version 0.1
 Name:		texlive-skull
 Version:	0.1
-Release:	4
+Release:	5
 Summary:	A font to draw a skull
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/skull
