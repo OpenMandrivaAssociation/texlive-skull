@@ -3,7 +3,7 @@ Version:	51907
 Release:	2
 Summary:	A font to draw a skull
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/skull
+URL:		https://www.ctan.org/tex-archive/fonts/skull
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/skull.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/skull.source.r%{version}.tar.xz
